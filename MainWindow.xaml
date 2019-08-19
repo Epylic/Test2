@@ -1,0 +1,15 @@
+﻿<Window x:Class="SpeakHelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpeakHelloWorld"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Speak" Content="Speak &quot;Hello World&quot;" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Click="Speak_Click"/>
+        <Button x:Name="SpeakText" Content="Speak Text" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="75" Click="SpeakText_Click"/>
+        <TextBox x:Name="SpeechInput" HorizontalAlignment="Center" Height="58" Margin="4,108,0,0" TextWrapping="Wrap" Text="Type what you want to be spoken here" VerticalAlignment="Top" Width="421" TextChanged="SpeechInput_TextChanged"/>
+
+    </Grid>
+</Window>
